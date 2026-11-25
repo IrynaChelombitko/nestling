@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Nestling concept//EN
+BEGIN:VEVENT
+UID:ns2703@nestling.example
+DTSTAMP:20261125T120000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270329
+SUMMARY:Nestling newborn session window (concept)
+DESCRIPTION:Nestling holds 19 to 28 March for your newborn session. Text 07700 900321 when your baby arrives. Concept project by Iryna Chelombitko.
+END:VEVENT
+END:VCALENDAR

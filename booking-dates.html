@@ -43,6 +43,16 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 .tile img{transition:transform .5s ease}
 .tile:hover img{transform:scale(1.04)}
 .heldp{animation:heldpop 9s ease-in-out infinite}
+.mmenu>summary{list-style:none;cursor:pointer}
+.mmenu>summary::-webkit-details-marker{display:none}
+.mmenu .ic-close{display:none}
+.mmenu[open] .ic-open{display:none}
+.mmenu[open] .ic-close{display:block}
+.mmenu[open] .msheet{animation:sheetin .35s cubic-bezier(.2,.9,.3,1) both}
+@keyframes sheetin{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+.opt.is-on{background:#FDEBEF !important;border-color:#F9CAD3 !important}
+.opt.is-off{background:#FFFFFF !important;border-color:#F3DDE3 !important}
+.mpills{scrollbar-width:none}.mpills::-webkit-scrollbar{display:none}
 @media (prefers-reduced-motion: reduce){*{animation:none !important}}
 @media (max-width: 860px){.only-wide{display:none !important}}
 </style>
@@ -74,7 +84,7 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 <div style="display: flex; flex-wrap: wrap; gap: 36px 48px; align-items: flex-start">
 <div style="flex: 1 1 250px; max-width: 300px; display: flex; flex-direction: column; gap: 22px">
 <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><label for="due" style="font-size: 14px; color: #6B5A66">Due date</label><input id="due" type="text" value="14 March 2027" style="box-sizing: border-box; width: 100%; height: 52px; padding: 0 18px; border: 1.5px solid #8F6F86; border-radius: 16px; background: #FFFFFF; color: #3A1F40; font-family: inherit; font-size: 17px"></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #6B5A66">Best time of day for you</span><div style="display: flex; flex-wrap: wrap; gap: 10px"><button type="button" aria-pressed="true" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #3A1F40; color: #FFFFFF; border-color: #3A1F40">Morning</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Midday</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Either</button></div></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 14px; color: #6B5A66">Best time of day for you</span><div role="group" style="display: flex; flex-wrap: wrap; gap: 10px"><button type="button" class="pill" aria-pressed="true" style="flex: none; height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #3A1F40; color: #FFFFFF; border-color: #3A1F40">Morning</button><button type="button" class="pill" aria-pressed="false" style="flex: none; height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Midday</button><button type="button" class="pill" aria-pressed="false" style="flex: none; height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Either</button></div></div>
 <p style="margin: 0; font-size: 15px; color: #6B5A66">Babies are sleepiest in the morning, so most families come at 9:30.</p>
 </div>
 <div style="flex: 1.4 1 380px; max-width: 440px; min-width: 0"><div style="display: flex; flex-direction: column; gap: 14px">
@@ -99,7 +109,7 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 <div aria-hidden="true" style="position: absolute; left: 78%; top: -40px; width: 1.5px; height: 90px; background: #8F6F86"></div>
 <div style="position: relative; background: #FDEBEF; border-radius: 30px; padding: 26px 28px 14px; transform-origin: 50% -80px; animation: hangcard 5s ease-in-out infinite alternate">
 <h2 style="margin: 0 0 12px; font-size: 21px; line-height: 1.2; font-weight: 500">Your booking</h2>
-<dl style="margin: 0; font-size: 16px"><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Package</dt><dd style="margin: 0; text-align: right; font-weight: 500">Baby and parents</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Session</dt><dd style="margin: 0; text-align: right; font-weight: 500">2 hours, 20 photos</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Due date</dt><dd style="margin: 0; text-align: right; font-weight: 500">14 March 2027</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Held for you</dt><dd style="margin: 0; text-align: right; font-weight: 500">19 to 28 March</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Deposit today</dt><dd style="margin: 0; text-align: right; font-weight: 600">£50</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">On the day</dt><dd style="margin: 0; text-align: right; font-weight: 500">£295</dd></div></dl>
+<dl style="margin: 0; font-size: 16px"><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Package</dt><dd data-k="package" style="margin: 0; text-align: right; font-weight: 500">Baby and parents</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Session</dt><dd data-k="session" style="margin: 0; text-align: right; font-weight: 500">2 hours, 20 photos</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Due date</dt><dd style="margin: 0; text-align: right; font-weight: 500">14 March 2027</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Held for you</dt><dd style="margin: 0; text-align: right; font-weight: 500">19 to 28 March</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">Deposit today</dt><dd style="margin: 0; text-align: right; font-weight: 600">£50</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid #EBCBD5"><dt style="color: #6B5A66">On the day</dt><dd data-k="onday" style="margin: 0; text-align: right; font-weight: 500">£295</dd></div></dl>
 </div>
 <p style="margin: 14px 6px 0; font-size: 14px; line-height: 1.45; color: #6B5A66">Dates move for free if your baby comes early or late.</p>
 </aside>
@@ -123,5 +133,6 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 
 
 <div style="background:#3A1F40;color:#FDEBEF;font:400 14px/1.5 'Parkinsans',system-ui,sans-serif;text-align:center;padding:14px 20px">Concept project by <a href="https://www.behance.net/Iryna_chelombitko" style="color:#F9CAD3">Iryna Chelombitko</a>. Nestling is not a real studio: the phone number, address and bookings are made up, and the photos are AI-generated.</div>
+<script src="site.js" defer></script>
 </body>
 </html>
