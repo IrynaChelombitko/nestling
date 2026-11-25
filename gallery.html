@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nestling, gallery</title>
+<meta name="viewport" content="width=1440">
+<meta name="description" content="Nestling: concept website and booking flow for a UK newborn photo studio. Design by Iryna Chelombitko.">
+<meta property="og:title" content="Nestling, newborn photo studio (concept)">
+<meta property="og:description" content="Book by your due date. Concept website and booking flow by Iryna Chelombitko.">
+<meta property="og:image" content="https://irynachelombitko.github.io/nestling/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg">
+
+</head>
+<body>
+
+
+<style>@font-face{font-family:'Parkinsans';src:url(parkinsans.woff2) format('woff2');font-weight:300 800;font-display:swap}
+@font-face{font-family:'Nothing You Could Do';src:url(nothing-you-could-do.woff2) format('woff2');font-display:swap}</style>
+<style>
+body{margin:0}
+a{color:#3A1F40}a:hover{color:#C92C63}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+@keyframes logosway{from{transform:rotate(-2.2deg)}to{transform:rotate(2.2deg)}}
+@keyframes twirl{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@keyframes hangcard{from{transform:rotate(-0.7deg)}to{transform:rotate(0.7deg)}}
+@keyframes rock{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+@keyframes driftbig{from{transform:translateX(-50px)}to{transform:translateX(50px)}}
+@keyframes pass{from{transform:translateX(-20vw)}to{transform:translateX(110vw)}}
+@keyframes twinkle{from{opacity:.35}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes dropin{from{transform:translateY(-260px)}to{transform:translateY(0)}}
+@keyframes heldpop{0%,5%{opacity:0;transform:scale(.6)}11%{opacity:1;transform:scale(1.08)}15%,90%{opacity:1;transform:scale(1)}97%,100%{opacity:0;transform:scale(.6)}}
+@keyframes popin{from{opacity:0;transform:scale(.5)}60%{opacity:1;transform:scale(1.12)}to{opacity:1;transform:scale(1)}}
+@keyframes drawcheck{from{stroke-dashoffset:60}to{stroke-dashoffset:0}}
+@keyframes zzz{0%{opacity:0;transform:translate(0,0) scale(.7)}25%{opacity:1}100%{opacity:0;transform:translate(14px,-26px) scale(1.1)}}
+.btn{transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .2s}
+.btn:hover{transform:translateY(-2px) rotate(-1.5deg);background:#B02456 !important;color:#FFFFFF}
+.btn:active{transform:scale(.96)}
+.opt{transition:background .2s}
+.opt:hover{background:#FDEBEF}
+.tile img{transition:transform .5s ease}
+.tile:hover img{transform:scale(1.04)}
+.heldp{animation:heldpop 9s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+@media (max-width: 860px){.only-wide{display:none !important}}
+</style>
+
+<div style="background: #FFFFFF; color: #3A1F40; font-family: 'Parkinsans', system-ui, sans-serif; font-size: 17px; line-height: 1.5">
+<header style="position: sticky; top: 0; z-index: 5; background: #F9CAD3">
+<div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 0 40px; min-height: 76px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<div style="display: flex; align-items: center; gap: 34px">
+<a href="index.html" aria-label="Nestling, home" style="text-decoration: none; display: inline-flex"><span aria-hidden="true" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 3.2em; transform-origin: 50% 0; animation: logosway 3.6s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></a>
+<nav class="only-wide" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="gallery.html" style="text-decoration: underline; text-decoration-color: #C92C63; text-decoration-thickness: 2px; text-underline-offset: 7px">Gallery</a>
+<a href="booking-package.html" style="text-decoration: none">Packages</a>
+<a href="studio.html" style="text-decoration: none">The studio</a>
+<a href="index.html" style="text-decoration: none">Before you come</a>
+</nav>
+</div>
+<div style="display: flex; align-items: center; gap: 24px">
+<a class="only-wide" href="tel:+442079460321" style="text-decoration: none; font-size: 15px; font-weight: 500">020 7946 0321</a>
+<a href="booking-package.html" class="btn" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 28px; border: 0; border-radius: 999px; background: #C92C63; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: 17px; font-weight: 500; height: 44px; padding: 0 22px; font-size: 15px">Check dates</a>
+</div>
+</div>
+</header>
+<div style="position: relative; background: #F9CAD3; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 200 90" style="position: absolute; right: 14%; top: 34px; width: 150px; height: 68px; animation: driftbig 20s ease-in-out infinite alternate" fill="#FFFFFF"><path d="M20 78 C4 78 0 60 14 54 C8 36 30 26 44 36 C50 14 86 8 98 30 C112 16 140 22 140 42 C160 34 182 48 174 64 C192 66 190 80 176 80 Z"></path></svg>
+<svg aria-hidden="true" viewBox="0 0 20 20" style="position: absolute; right: 30%; top: 40px; width: 16px; height: 16px; animation: twinkle 2.6s ease-in-out infinite alternate" fill="#FFFFFF"><path d="M10 0 C10.8 6 14 9.2 20 10 C14 10.8 10.8 14 10 20 C9.2 14 6 10.8 0 10 C6 9.2 9.2 6 10 0 Z"></path></svg>
+<div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 44px 40px 20px; display: flex; flex-direction: column; gap: 12px">
+<h1 style="margin: 0; font-size: clamp(34px, 3.4vw, 48px); line-height: 1.08; font-weight: 500; letter-spacing: -0.025em">Gallery</h1>
+<p style="margin: 0; max-width: 520px">Every baby here was photographed between day 5 and day 14.</p>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 76px; " fill="#FFFFFF"><path d="M0 90 L0 46 C17 25 69 17 96 50 C110 23 150 15 171 46 C184 29 224 21 244 46 C258 23 298 15 319 44 C332 29 372 21 393 52 C413 36 474 28 505 52 C522 28 571 20 597 45 C610 22 650 14 670 50 C686 28 733 20 757 47 C773 34 820 26 844 49 C863 29 919 21 948 47 C968 28 1029 20 1060 50 C1079 23 1134 15 1163 44 C1177 33 1218 25 1240 46 C1254 26 1297 18 1319 50 C1331 24 1367 16 1386 52 C1403 28 1454 20 1440 47 L1440 90 Z"></path></svg>
+</div>
+<main style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 10px 40px 100px; display: flex; flex-direction: column; gap: 34px">
+<div style="display: flex; flex-wrap: wrap; gap: 10px"><button type="button" aria-pressed="true" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #3A1F40; color: #FFFFFF; border-color: #3A1F40">All sessions</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Baby only</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">With parents</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Whole family</button><button type="button" aria-pressed="false" style="height: 44px; padding: 0 20px; border: 1.5px solid; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; background: #FFFFFF; color: #3A1F40; border-color: #D9B8C2">Tiny details</button></div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px"><div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px"><figure class="tile" style="margin: 0"><div style="background: #F9CAD3; height: 460px; border-radius: 24px; overflow: hidden"><img src="basket.png" alt="Sleeping newborn in a white woven basket lined with sheepskin" style="display: block; object-fit: cover; object-position: center 40%; width: 100%; height: 100%"></div><figcaption style="font-family: 'Nothing You Could Do', cursive; font-size: 22px; line-height: 1.3; padding: 8px 6px 0">Ada, nine days</figcaption></figure><figure class="tile" style="margin: 0"><div style="height: 500px; border-radius: 24px; overflow: hidden"><img src="portrait-muslin.jpg" alt="Sleeping newborn swaddled in muslin, seen from above" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div></figure><figure class="tile" style="margin: 0"><div style="height: 340px; border-radius: 24px; overflow: hidden"><img src="family-window.jpg" alt="Parents holding their newborn by a window" style="display: block; object-fit: cover; object-position: 60% center; width: 100%; height: 100%"></div><figcaption style="font-family: 'Nothing You Could Do', cursive; font-size: 22px; line-height: 1.3; padding: 8px 6px 0">Wren, six days</figcaption></figure></div><div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px"><figure class="tile" style="margin: 0"><div style="height: 300px; border-radius: 24px; overflow: hidden"><img src="hand.jpg" alt="Newborn hand holding a mother's finger" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div></figure><figure class="tile" style="margin: 0"><div style="height: 320px; border-radius: 24px; overflow: hidden"><img src="romper.jpg" alt="Sleeping newborn in a white knitted romper and lilac bonnet" style="display: block; object-fit: cover; object-position: 45% center; width: 100%; height: 100%"></div><figcaption style="font-family: 'Nothing You Could Do', cursive; font-size: 22px; line-height: 1.3; padding: 8px 6px 0">Iris, eight days</figcaption></figure><figure class="tile" style="margin: 0"><div style="height: 440px; border-radius: 24px; overflow: hidden"><img src="yawn.jpg" alt="Newborn yawning in a white knit hat" style="display: block; object-fit: cover; object-position: 30% 40%; width: 100%; height: 100%"></div></figure><figure class="tile" style="margin: 0"><div style="height: 380px; border-radius: 190px 190px 24px 24px; overflow: hidden"><img src="hero-swaddle.jpg" alt="Sleeping newborn swaddled in a blush knit wrap and bonnet" style="display: block; object-fit: cover; object-position: 40% center; width: 100%; height: 100%"></div></figure></div><div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px"><figure class="tile" style="margin: 0"><div style="height: 520px; border-radius: 150px 150px 24px 24px; overflow: hidden"><img src="mum.jpg" alt="Mother holding her sleeping newborn against her shoulder" style="display: block; object-fit: cover; object-position: 50% 30%; width: 100%; height: 100%"></div></figure><figure class="tile" style="margin: 0"><div style="height: 330px; border-radius: 24px; overflow: hidden"><img src="dad-chest.jpg" alt="Newborn asleep on father's chest" style="display: block; object-fit: cover; object-position: 55% 40%; width: 100%; height: 100%"></div><figcaption style="font-family: 'Nothing You Could Do', cursive; font-size: 22px; line-height: 1.3; padding: 8px 6px 0">Theo, twelve days</figcaption></figure><figure class="tile" style="margin: 0"><div style="height: 300px; border-radius: 24px; overflow: hidden"><img src="feet.jpg" alt="Newborn feet resting in a parent's hands" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div></figure></div></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 30px 36px; border-radius: 30px; background: #FDEBEF">
+<p style="margin: 0; font-size: 24px; line-height: 1.25; font-weight: 500; letter-spacing: -0.015em">Due in the next few months? Hold your dates now.</p>
+<a href="booking-package.html" class="btn" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 28px; border: 0; border-radius: 999px; background: #C92C63; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: 17px; font-weight: 500">Check dates</a>
+</div>
+</main>
+<div style="position: relative; background: #F9CAD3; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 76px; transform: scaleY(-1); " fill="#FFFFFF"><path d="M0 90 L0 48 C18 22 71 14 98 48 C112 28 152 20 173 48 C186 28 224 20 244 52 C256 28 294 20 313 52 C325 38 361 30 380 49 C397 26 448 18 475 49 C494 27 552 19 582 44 C598 22 645 14 670 50 C689 28 747 20 777 46 C792 35 839 27 863 51 C876 22 915 14 935 47 C954 26 1010 18 1039 46 C1054 38 1097 30 1120 49 C1135 22 1181 14 1205 48 C1221 28 1268 20 1293 50 C1305 24 1341 16 1360 45 C1375 25 1418 17 1440 48 L1440 90 Z"></path></svg>
+<svg aria-hidden="true" viewBox="0 0 200 90" style="position: absolute; right: 30%; top: 64px; width: 120px; height: 54px; animation: driftbig 22s ease-in-out infinite alternate" fill="#FFFFFF"><path d="M20 78 C4 78 0 60 14 54 C8 36 30 26 44 36 C50 14 86 8 98 30 C112 16 140 22 140 42 C160 34 182 48 174 64 C192 66 190 80 176 80 Z"></path></svg>
+<footer style="position: relative; box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 36px 40px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 60px; font-size: 15px">
+<div><span role="img" aria-label="Nestling" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 0.55em; transform-origin: 50% 0; animation: sway 3.2s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></div>
+<div><strong style="font-weight: 500">Visit</strong><br>Unit 3, Marlow Yard<br>London E8</div>
+<div><strong style="font-weight: 500">Call or text</strong><br><a href="tel:+442079460321" style="text-decoration: none">020 7946 0321</a></div>
+<div><strong style="font-weight: 500">Open</strong><br>Monday to Saturday<br>9am to 5pm</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<a href="gallery.html">Gallery</a>
+<a href="booking-package.html">Packages</a>
+<a href="studio.html">The studio</a>
+</div>
+</footer>
+</div>
+</div>
+
+
+<div style="background:#3A1F40;color:#FDEBEF;font:400 14px/1.5 'Parkinsans',system-ui,sans-serif;text-align:center;padding:14px 20px">Concept project by <a href="https://www.behance.net/Iryna_chelombitko" style="color:#F9CAD3">Iryna Chelombitko</a>. Nestling is not a real studio: the phone number, address and bookings are made up, and the photos are AI-generated.</div>
+</body>
+</html>

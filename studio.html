@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nestling, the studio</title>
+<meta name="viewport" content="width=1440">
+<meta name="description" content="Nestling: concept website and booking flow for a UK newborn photo studio. Design by Iryna Chelombitko.">
+<meta property="og:title" content="Nestling, newborn photo studio (concept)">
+<meta property="og:description" content="Book by your due date. Concept website and booking flow by Iryna Chelombitko.">
+<meta property="og:image" content="https://irynachelombitko.github.io/nestling/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg">
+
+</head>
+<body>
+
+
+<style>@font-face{font-family:'Parkinsans';src:url(parkinsans.woff2) format('woff2');font-weight:300 800;font-display:swap}
+@font-face{font-family:'Nothing You Could Do';src:url(nothing-you-could-do.woff2) format('woff2');font-display:swap}</style>
+<style>
+body{margin:0}
+a{color:#3A1F40}a:hover{color:#C92C63}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+@keyframes logosway{from{transform:rotate(-2.2deg)}to{transform:rotate(2.2deg)}}
+@keyframes twirl{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@keyframes hangcard{from{transform:rotate(-0.7deg)}to{transform:rotate(0.7deg)}}
+@keyframes rock{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+@keyframes driftbig{from{transform:translateX(-50px)}to{transform:translateX(50px)}}
+@keyframes pass{from{transform:translateX(-20vw)}to{transform:translateX(110vw)}}
+@keyframes twinkle{from{opacity:.35}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes dropin{from{transform:translateY(-260px)}to{transform:translateY(0)}}
+@keyframes heldpop{0%,5%{opacity:0;transform:scale(.6)}11%{opacity:1;transform:scale(1.08)}15%,90%{opacity:1;transform:scale(1)}97%,100%{opacity:0;transform:scale(.6)}}
+@keyframes popin{from{opacity:0;transform:scale(.5)}60%{opacity:1;transform:scale(1.12)}to{opacity:1;transform:scale(1)}}
+@keyframes drawcheck{from{stroke-dashoffset:60}to{stroke-dashoffset:0}}
+@keyframes zzz{0%{opacity:0;transform:translate(0,0) scale(.7)}25%{opacity:1}100%{opacity:0;transform:translate(14px,-26px) scale(1.1)}}
+.btn{transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .2s}
+.btn:hover{transform:translateY(-2px) rotate(-1.5deg);background:#B02456 !important;color:#FFFFFF}
+.btn:active{transform:scale(.96)}
+.opt{transition:background .2s}
+.opt:hover{background:#FDEBEF}
+.tile img{transition:transform .5s ease}
+.tile:hover img{transform:scale(1.04)}
+.heldp{animation:heldpop 9s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+@media (max-width: 860px){.only-wide{display:none !important}}
+</style>
+
+<div style="background: #FFFFFF; color: #3A1F40; font-family: 'Parkinsans', system-ui, sans-serif; font-size: 17px; line-height: 1.5">
+<header style="position: sticky; top: 0; z-index: 5; background: #F9CAD3">
+<div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 0 40px; min-height: 76px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<div style="display: flex; align-items: center; gap: 34px">
+<a href="index.html" aria-label="Nestling, home" style="text-decoration: none; display: inline-flex"><span aria-hidden="true" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 3.2em; transform-origin: 50% 0; animation: logosway 3.6s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></a>
+<nav class="only-wide" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="gallery.html" style="text-decoration: none">Gallery</a>
+<a href="booking-package.html" style="text-decoration: none">Packages</a>
+<a href="studio.html" style="text-decoration: underline; text-decoration-color: #C92C63; text-decoration-thickness: 2px; text-underline-offset: 7px">The studio</a>
+<a href="index.html" style="text-decoration: none">Before you come</a>
+</nav>
+</div>
+<div style="display: flex; align-items: center; gap: 24px">
+<a class="only-wide" href="tel:+442079460321" style="text-decoration: none; font-size: 15px; font-weight: 500">020 7946 0321</a>
+<a href="booking-package.html" class="btn" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 28px; border: 0; border-radius: 999px; background: #C92C63; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: 17px; font-weight: 500; height: 44px; padding: 0 22px; font-size: 15px">Check dates</a>
+</div>
+</div>
+</header>
+<div style="position: relative; background: #F9CAD3; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 200 90" style="position: absolute; right: 10%; top: 40px; width: 170px; height: 77px; animation: driftbig 22s ease-in-out infinite alternate" fill="#FFFFFF"><path d="M18 80 C2 78 2 60 16 56 C12 40 34 30 46 42 C56 20 88 18 96 38 C110 22 142 28 138 50 C158 42 180 54 172 68 C190 70 188 82 174 82 Z"></path></svg>
+<div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 44px 40px 20px; display: flex; flex-direction: column; gap: 12px">
+<h1 style="margin: 0; font-size: clamp(34px, 3.4vw, 48px); line-height: 1.08; font-weight: 500; letter-spacing: -0.025em">The studio</h1>
+<p style="margin: 0; max-width: 540px">Three daylight rooms in east London, a short walk from Hackney Central. Always warm, always quiet.</p>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 76px; " fill="#FFFFFF"><path d="M0 90 L0 49 C17 24 68 16 95 46 C111 23 160 15 185 44 C204 28 262 20 292 47 C306 31 347 23 369 45 C381 35 419 27 438 46 C454 31 501 23 526 52 C540 37 582 29 604 47 C621 27 672 19 698 44 C710 22 746 14 765 51 C781 34 828 26 853 46 C871 32 926 24 954 51 C971 32 1022 24 1049 51 C1063 26 1107 18 1129 50 C1148 38 1205 30 1235 52 C1249 26 1290 18 1312 44 C1328 36 1376 28 1401 47 C1420 36 1479 28 1440 44 L1440 90 Z"></path></svg>
+</div>
+<main style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 20px 40px 0; display: flex; flex-direction: column; gap: 70px">
+<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px 64px">
+<div class="tile" style="flex: 1.5 1 480px; min-width: 0; height: 400px; border-radius: 36px; overflow: hidden"><img src="room-window.jpg" alt="Studio room with a large window, white floorboards and a low bed" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em">The window room</h2>
+<p style="margin: 0">North light all day and room to move around a low bed. Most newborn sessions happen here.</p>
+<dl style="margin: 6px 0 0; font-size: 16px; border-bottom: 1px solid #F3DDE3"><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Size</dt><dd style="margin: 0; font-weight: 500; text-align: right">42 m²</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Light</dt><dd style="margin: 0; font-weight: 500; text-align: right">North window, 3 m tall</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Good for</dt><dd style="margin: 0; font-weight: 500; text-align: right">Up to 6 people</dd></div></dl>
+</div>
+</section><section style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px 64px">
+<div class="tile" style="order: 2; flex: 1.5 1 480px; min-width: 0; height: 400px; border-radius: 36px; overflow: hidden"><img src="room-linen.jpg" alt="Shelves with folded knit wraps and baby hats" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em">The linen room</h2>
+<p style="margin: 0">Small and extra warm, with every wrap, hat and basket within reach.</p>
+<dl style="margin: 6px 0 0; font-size: 16px; border-bottom: 1px solid #F3DDE3"><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Size</dt><dd style="margin: 0; font-weight: 500; text-align: right">18 m²</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Light</dt><dd style="margin: 0; font-weight: 500; text-align: right">Soft side window</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Good for</dt><dd style="margin: 0; font-weight: 500; text-align: right">Baby-only portraits</dd></div></dl>
+</div>
+</section><section style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px 64px">
+<div class="tile" style="flex: 1.5 1 480px; min-width: 0; height: 400px; border-radius: 36px; overflow: hidden"><img src="room-garden.jpg" alt="Pink sofa beside a glass door to the garden" style="display: block; object-fit: cover; object-position: center; width: 100%; height: 100%"></div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em">The garden room</h2>
+<p style="margin: 0">A sofa, a door to the garden and space for the pram, grandparents and big sisters.</p>
+<dl style="margin: 6px 0 0; font-size: 16px; border-bottom: 1px solid #F3DDE3"><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Size</dt><dd style="margin: 0; font-weight: 500; text-align: right">30 m²</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Light</dt><dd style="margin: 0; font-weight: 500; text-align: right">Garden door, morning sun</dd></div><div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #F3DDE3"><dt style="color: #6B5A66">Good for</dt><dd style="margin: 0; font-weight: 500; text-align: right">Whole families</dd></div></dl>
+</div>
+</section>
+</main>
+<div id="hire" style="position: relative; margin-top: 90px; background: #FDEBEF; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 70px; transform: scaleY(-1); " fill="#FFFFFF"><path d="M0 90 L0 46 C19 27 74 19 103 46 C119 36 169 28 194 51 C211 36 262 28 289 48 C304 28 347 20 370 49 C387 28 440 20 467 47 C483 24 532 16 557 45 C577 36 635 28 666 52 C685 31 743 23 773 50 C791 33 846 25 874 50 C894 35 955 27 986 46 C1002 27 1049 19 1073 50 C1092 33 1151 25 1181 52 C1195 30 1238 22 1260 44 C1278 23 1331 15 1359 50 C1376 27 1426 19 1440 52 L1440 90 Z"></path></svg>
+<div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 24px 40px 30px; display: flex; flex-wrap: wrap; gap: 36px 72px; align-items: flex-start">
+<div style="flex: 1.5 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<h2 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em">Photographer yourself? Rent a room.</h2>
+<div style="overflow-x: auto"><table style="width: 100%; min-width: 440px; border-collapse: collapse; font-size: 17px; text-align: left">
+<thead><tr style="color: #6B5A66; font-size: 14px"><th scope="col" style="font-weight: 400; padding: 0 16px 10px">Room</th><th scope="col" style="font-weight: 400; padding: 0 0 10px">Size</th><th scope="col" style="font-weight: 400; padding: 0 0 10px">Per hour</th><th scope="col" style="font-weight: 400; padding: 0 16px 10px; text-align: right">Full day</th></tr></thead>
+<tbody><tr style="border-top: 1px solid #EBCBD5"><td style="padding: 18px 16px; font-weight: 500">The window room</td><td style="padding: 18px 0">42 m²</td><td style="padding: 18px 0">£45</td><td style="padding: 18px 16px; text-align: right">£280</td></tr><tr style="border-top: 1px solid #EBCBD5"><td style="padding: 18px 16px; font-weight: 500">The linen room</td><td style="padding: 18px 0">18 m²</td><td style="padding: 18px 0">£30</td><td style="padding: 18px 16px; text-align: right">£180</td></tr><tr style="border-top: 1px solid #EBCBD5"><td style="padding: 18px 16px; font-weight: 500">The garden room</td><td style="padding: 18px 0">30 m²</td><td style="padding: 18px 0">£35</td><td style="padding: 18px 16px; text-align: right">£220</td></tr></tbody></table></div>
+<p style="margin: 0; font-size: 15px; color: #6B5A66">Hire is from Monday to Saturday, two hours minimum.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 6px 0 0; font-size: 21px; font-weight: 500">Every hire includes</h3>
+<ul style="list-style: none; margin: 0; padding: 0">
+<li style="padding: 13px 0; border-top: 1px solid #EBCBD5">Wraps, hats, baskets and backdrops</li>
+<li style="padding: 13px 0; border-top: 1px solid #EBCBD5">A heater and a white noise speaker</li>
+<li style="padding: 13px 0; border-top: 1px solid #EBCBD5; border-bottom: 1px solid #EBCBD5">A changing corner and a kettle</li>
+</ul>
+<a href="mailto:hire@nestling.example" class="btn" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 28px; border: 0; border-radius: 999px; background: #C92C63; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: 17px; font-weight: 500; align-self: flex-start; margin-top: 8px">Ask about a date</a>
+</div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 70px; " fill="#FFFFFF"><path d="M0 90 L0 47 C17 33 67 25 93 44 C111 22 166 14 195 52 C207 22 244 14 263 48 C279 22 327 14 352 45 C371 36 428 28 458 51 C478 25 536 17 567 49 C582 31 625 23 648 46 C663 35 707 27 730 52 C744 27 786 19 808 45 C823 26 866 18 889 45 C902 25 942 17 963 45 C981 30 1035 22 1063 45 C1075 36 1113 28 1132 45 C1147 27 1190 19 1213 44 C1232 26 1287 18 1316 52 C1330 33 1372 25 1394 45 C1414 29 1473 21 1440 44 L1440 90 Z"></path></svg>
+</div>
+<div style="position: relative; background: #F9CAD3; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 76px; transform: scaleY(-1); " fill="#FFFFFF"><path d="M0 90 L0 48 C13 38 53 30 73 51 C91 27 146 19 175 51 C190 24 236 16 260 51 C276 38 326 30 351 52 C365 36 407 28 429 45 C441 30 477 22 496 50 C508 35 544 27 563 49 C581 35 636 27 664 51 C682 35 737 27 765 46 C777 30 815 22 834 47 C854 24 914 16 945 51 C965 33 1025 25 1056 48 C1069 29 1109 21 1130 44 C1144 30 1187 22 1209 48 C1229 23 1289 15 1320 47 C1338 27 1391 19 1418 50 C1431 24 1469 16 1440 45 L1440 90 Z"></path></svg>
+<svg aria-hidden="true" viewBox="0 0 200 90" style="position: absolute; right: 30%; top: 64px; width: 120px; height: 54px; animation: driftbig 22s ease-in-out infinite alternate" fill="#FFFFFF"><path d="M20 78 C4 78 0 60 14 54 C8 36 30 26 44 36 C50 14 86 8 98 30 C112 16 140 22 140 42 C160 34 182 48 174 64 C192 66 190 80 176 80 Z"></path></svg>
+<footer style="position: relative; box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 36px 40px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 60px; font-size: 15px">
+<div><span role="img" aria-label="Nestling" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 0.55em; transform-origin: 50% 0; animation: sway 3.2s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></div>
+<div><strong style="font-weight: 500">Visit</strong><br>Unit 3, Marlow Yard<br>London E8</div>
+<div><strong style="font-weight: 500">Call or text</strong><br><a href="tel:+442079460321" style="text-decoration: none">020 7946 0321</a></div>
+<div><strong style="font-weight: 500">Open</strong><br>Monday to Saturday<br>9am to 5pm</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<a href="gallery.html">Gallery</a>
+<a href="booking-package.html">Packages</a>
+<a href="studio.html">The studio</a>
+</div>
+</footer>
+</div>
+</div>
+
+
+<div style="background:#3A1F40;color:#FDEBEF;font:400 14px/1.5 'Parkinsans',system-ui,sans-serif;text-align:center;padding:14px 20px">Concept project by <a href="https://www.behance.net/Iryna_chelombitko" style="color:#F9CAD3">Iryna Chelombitko</a>. Nestling is not a real studio: the phone number, address and bookings are made up, and the photos are AI-generated.</div>
+</body>
+</html>
