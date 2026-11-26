@@ -58,6 +58,10 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 tbody tr{transition:background .2s}
 tbody tr:hover{background:#FDEBEF}
 @media (prefers-reduced-motion: reduce){*{animation:none !important}}
+@media (max-width: 960px){.navm{gap:20px !important}}
+:focus-visible{outline:2px solid #C92C63;outline-offset:3px;border-radius:6px}
+.btn:focus-visible{outline-offset:4px;border-radius:999px}
+@media (max-width: 1024px), (pointer: coarse){a:not(.btn):not([style*="padding"]):not([style*="margin"]):not([style*="height"]){padding-top:10px;padding-bottom:10px;margin-top:-10px;margin-bottom:-10px}}
 @media (max-width: 860px){.only-wide{display:none !important}.rope{height:auto !important;display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:0 20px}.rope>svg{display:none}.hang{position:static !important}}
 </style>
 
@@ -67,11 +71,11 @@ tbody tr:hover{background:#FDEBEF}
 <div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 0 40px; min-height: 76px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
 <div style="display: flex; align-items: center; gap: 34px">
 <a href="index.html" aria-label="Nestling, home" style="text-decoration: none; display: inline-flex"><span aria-hidden="true" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 3.2em; transform-origin: 50% 0; animation: logosway 3.6s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></a>
-<nav class="only-wide" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+<nav class="navm" aria-label="Main" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
 <a href="gallery.html" style="text-decoration: none">Gallery</a>
 <a href="#packages" style="text-decoration: none">Packages</a>
 <a href="studio.html" style="text-decoration: none">The studio</a>
-<a href="#guide" style="text-decoration: none">Before you come</a>
+<a href="guide.html" style="text-decoration: none">Before you come</a>
 </nav>
 </div>
 <div style="display: flex; align-items: center; gap: 24px">
@@ -308,7 +312,7 @@ tbody tr:hover{background:#FDEBEF}
 <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
 <h2 style="margin: 0; font-size: 36px; line-height: 1.12; font-weight: 500; letter-spacing: -0.02em">Before you come</h2>
 <p style="margin: 0; max-width: 400px">Nothing to buy and nothing to rehearse. Four small things make the day easier.</p>
-<a href="#guide" style="font-size: 16px; font-weight: 500">Read the full guide</a>
+<a href="guide.html" style="font-size: 16px; font-weight: 500">Read the full guide</a>
 </div>
 <ul style="flex: 1.4 1 460px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
 <li style="padding: 18px 0; border-top: 1px solid #F3DDE3">Feed your baby just before you leave home.</li>
@@ -348,7 +352,7 @@ tbody tr:hover{background:#FDEBEF}
 <a href="#gallery">Gallery</a>
 <a href="#packages">Packages</a>
 <a href="#studio">The studio</a>
-<a href="#guide">Before you come</a>
+<a href="guide.html">Before you come</a>
 </div>
 </div>
 </footer>
@@ -358,6 +362,6 @@ tbody tr:hover{background:#FDEBEF}
 
 
 <div style="background:#3A1F40;color:#FDEBEF;font:400 14px/1.5 'Parkinsans',system-ui,sans-serif;text-align:center;padding:14px 20px">Concept project by <a href="https://www.behance.net/Iryna_chelombitko" style="color:#F9CAD3">Iryna Chelombitko</a>. Nestling is not a real studio: the phone number, address and bookings are made up, and the photos are AI-generated.</div>
-<script src="site.js?v=20261125-2" defer></script>
+<script src="site.js?v=20261126-1" defer></script>
 </body>
 </html>

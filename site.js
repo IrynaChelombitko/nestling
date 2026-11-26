@@ -240,6 +240,20 @@
   $$('.mmenu a').forEach(function (a) { a.addEventListener('click', function () { var d = a.closest('details'); if (d) d.open = false; }); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') $$('.mmenu[open]').forEach(function (d) { d.open = false; }); });
 
+  // ---------- before you come: packing checklist ----------
+  $$('[data-check]').forEach(function (box) {
+    var BK = 'nestling:bring', boxes = $$('input[type=checkbox]', box), out = $('[data-k="packed"]', box), saved = [];
+    try { saved = JSON.parse(localStorage.getItem(BK)) || []; } catch (e) {}
+    function count() {
+      var n = boxes.filter(function (c) { return c.checked; }).length;
+      out.textContent = n === boxes.length ? 'All packed' : n + ' of ' + boxes.length + ' packed';
+      out.style.color = n === boxes.length ? RASP : '';
+      try { localStorage.setItem(BK, JSON.stringify(boxes.filter(function (c) { return c.checked; }).map(function (c) { return c.value; }))); } catch (e) {}
+    }
+    boxes.forEach(function (c) { c.checked = saved.indexOf(c.value) > -1; c.addEventListener('change', count); });
+    count();
+  });
+
   $$('form:not([data-details])').forEach(function (f) { f.addEventListener('submit', function (e) { e.preventDefault(); }); });
   paintDue();
 })();

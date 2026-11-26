@@ -55,6 +55,21 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 .mpills{scrollbar-width:none}.mpills::-webkit-scrollbar{display:none}
 @media (prefers-reduced-motion: reduce){*{animation:none !important}}
 @media (max-width: 860px){.only-wide{display:none !important}}
+@media (max-width: 960px){.navm{gap:20px !important}}
+:focus-visible{outline:2px solid #C92C63;outline-offset:3px;border-radius:6px}
+.btn:focus-visible{outline-offset:4px;border-radius:999px}
+@media (max-width: 1024px), (pointer: coarse){a:not(.btn):not([style*="padding"]):not([style*="margin"]):not([style*="height"]){padding-top:10px;padding-bottom:10px;margin-top:-10px;margin-bottom:-10px}}
+.gwrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,1fr);gap:48px 80px;align-items:start}
+.gaside{position:sticky;top:110px}
+@media (max-width: 1000px){.gwrap{grid-template-columns:minmax(0,1fr)}.gaside{order:-1;position:static;max-width:560px}}
+.chk{position:relative;display:grid;grid-template-columns:26px minmax(0,1fr);gap:14px;align-items:start;padding:14px 0;border-top:1px solid #EBCBD5;cursor:pointer}
+.chk input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.chk .box{width:24px;height:24px;box-sizing:border-box;border-radius:8px;border:1.5px solid #D9B8C2;background:#FFFFFF;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s}
+.chk .box svg{opacity:0;transition:opacity .15s}
+.chk input:checked+.box{background:#C92C63;border-color:#C92C63}
+.chk input:checked+.box svg{opacity:1}
+.chk input:checked~.t{color:#6B5A66;text-decoration:line-through;text-decoration-color:rgba(107,90,102,.45)}
+.chk input:focus-visible+.box{outline:2px solid #C92C63;outline-offset:3px}
 </style>
 
 <div style="background: #FFFFFF; color: #3A1F40; font-family: 'Parkinsans', system-ui, sans-serif; font-size: 17px; line-height: 1.5">
@@ -62,11 +77,11 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 <div style="box-sizing: border-box; max-width: 1280px; margin: 0 auto; padding: 0 40px; min-height: 76px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
 <div style="display: flex; align-items: center; gap: 34px">
 <a href="index.html" aria-label="Nestling, home" style="text-decoration: none; display: inline-flex"><span aria-hidden="true" style="display: inline-block; font-size: 27px; font-weight: 600; letter-spacing: -0.035em; line-height: 1; color: #3A1F40; white-space: nowrap">nestl<span style="position: relative; display: inline-block">ı<span aria-hidden="true" style="position: absolute; left: 62%; bottom: 1.160em; width: 0; height: 3.2em; transform-origin: 50% 0; animation: logosway 3.6s ease-in-out infinite alternate; "><span style="position: absolute; left: 0; top: 0; width: max(1.2px, 0.028em); height: 100%; transform: translateX(-50%); background: #8F6F86; border-radius: 1px"></span><svg viewBox="4 2 24 38" style="position: absolute; left: -0.277em; top: calc(100% - 0.035em); width: 0.323em; height: 0.510em; overflow: visible"><path fill="#C92C63" d="M26 4 C14 5 6 14 7 24 C8 33 17 39 26 37 C19 34 15 27 16 20 C17 13 21 7 26 4 Z"></path></svg></span></span>ng</span></a>
-<nav class="only-wide" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+<nav class="navm" aria-label="Main" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
 <a href="gallery.html" style="text-decoration: none">Gallery</a>
 <a href="booking-package.html" style="text-decoration: none">Packages</a>
 <a href="studio.html" style="text-decoration: underline; text-decoration-color: #C92C63; text-decoration-thickness: 2px; text-underline-offset: 7px">The studio</a>
-<a href="index.html" style="text-decoration: none">Before you come</a>
+<a href="guide.html" style="text-decoration: none">Before you come</a>
 </nav>
 </div>
 <div style="display: flex; align-items: center; gap: 24px">
@@ -141,6 +156,7 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 <a href="gallery.html">Gallery</a>
 <a href="booking-package.html">Packages</a>
 <a href="studio.html">The studio</a>
+<a href="guide.html">Before you come</a>
 </div>
 </footer>
 </div>
@@ -148,6 +164,6 @@ a{color:#3A1F40}a:hover{color:#C92C63}
 
 
 <div style="background:#3A1F40;color:#FDEBEF;font:400 14px/1.5 'Parkinsans',system-ui,sans-serif;text-align:center;padding:14px 20px">Concept project by <a href="https://www.behance.net/Iryna_chelombitko" style="color:#F9CAD3">Iryna Chelombitko</a>. Nestling is not a real studio: the phone number, address and bookings are made up, and the photos are AI-generated.</div>
-<script src="site.js?v=20261125-2" defer></script>
+<script src="site.js?v=20261126-1" defer></script>
 </body>
 </html>
